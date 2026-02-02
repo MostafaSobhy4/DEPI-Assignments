@@ -1,1 +1,1 @@
-# DEPI-Assignment-1
+# DEPI-Assignments
