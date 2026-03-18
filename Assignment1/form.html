@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>an Accessible Form With Validations</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="name">Name</label>
+            <input id="name" type="text" required aria-describedby="nameHelp" aria-invalid="false">
+            <small id="nameHelp">Please enter your full name</small>
+
+            <br>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required aria-describedby="emailHelp" aria-invalid="false">
+            <small id="emailHelp">Email must be in the format => name@example.com</small>
+
+            <br>
+
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" pattern="[0-9]{11}" required aria-describedby="phoneHelp" aria-invalid="false">
+            <small id="phoneHelp">Phone number must be 11 digits</small>
+
+            <br>
+
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" required>
+
+            <br>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
