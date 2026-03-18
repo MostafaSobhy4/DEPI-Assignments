@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Bricolage Grotesque";
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 32px;
+}
+
+/* Start Hero + Header */
+
+.heroPLUSheader {
+    background-image: url(imgs/Hero-Image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.heroPLUSheader .container .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.heroPLUSheader .container nav > a {
+    width: 100%;
+}
+.heroPLUSheader .container .nav-content > a img {
+    width: 150px;
+}
+.heroPLUSheader .container nav ul {
+    display: flex;
+    gap: 20px;
+}
+.heroPLUSheader .container nav ul li a {
+    color: black;
+}
+
+.heroPLUSheader .hero {
+    width: 100%;
+    padding-bottom: 300px;
+}
+.heroPLUSheader .hero .container h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-family: "Bricolage Grotesque";
+}
+.heroPLUSheader .hero .container button {
+    padding: 25px 50px;
+    background-color: #0328aa;
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.hero-content {
+    margin-top: 150px;
+    max-width: 600px;      
+}
+
+/* End Hero + Header */
+
+/* Start Partners */
+.partners {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.partners .container .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+.partners .container .partner-logos img {
+    width: 100px;
+    object-fit: contain;
+}
+/* End Partners */
+
+/* Start about */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.about-content .img-about img {
+    width: 40vw;
+    border-radius: 8px;
+}
+.about-content .details-about {
+    max-width: 350px;
+}
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about-content .details-about p {
+    line-height: 1.6;
+    font-weight: 200;
+    font-size: 15px;
+}
+.about-content .details-about p:last-child {
+    margin-top: 20px;
+}
+/* End about */
+
+/* Start services */
+.services {
+    margin-bottom: 100px;
+}
+.services .container .service-items .service-item {
+    width: 350px;
+}
+.services .container .service-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+.services .container .service-items h3 {
+    margin-bottom: 10px;
+}
+.services .container .service-items p {
+    line-height: 1.6;
+    opacity: 0.8;
+    font-weight: 200;
+}
+.services .container .service-items img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+/* End services */
+
+/* Start Why Choose Us */
+.why {
+    margin-bottom: 100px;
+    background-image: url(imgs/Why-choose-us-bg.png);
+    background-size: cover;
+    background-color: #0328AA;
+    color: white;
+    padding: 150px 0px;
+}
+.why p {
+    font-weight: 200;
+}
+.why .container .why-choose-us-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+.why .container .why-choose-us-items p {
+    line-height: 1.6;
+    font-weight: 200;
+}
+.why .container .why-choose-us-items .item {
+    width: 370px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 24px;
+}
+.why .container .why-choose-us-items .item img {
+    width: 60px;
+    margin-bottom: 25px;
+}
+.why .container .why-choose-us-items .item h3:first-of-type {
+    margin-bottom: 15px;
+}
+.why .container .why-choose-us-items .item p:first-of-type {
+    margin-bottom: 15px;
+}
+.why .container .why-choose-us-items .item h3:last-of-type {
+    font-size: 50px;
+}
+/* End Why Choose Us */
+
+/* Start Testimonials */
+.testimonials {
+    margin-bottom: 100px;
+}  
+.testimonials .container .testimonial-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.testimonials .container p {
+    font-size: 13px;
+    max-width: 600px;
+    font-weight: 300;
+}
+.testimonials .container .testimonial-items .item {
+    width: 340px;
+    background-color: #EEF5FF;
+    padding: 30px;
+    border-radius: 24px;
+}
+.testimonials .container .testimonial-items .item img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.testimonials .container .testimonial-items .item h3 {
+    margin-bottom: 5px;
+}
+.testimonials .container .testimonial-items .item h4 {
+    margin-bottom: 15px;
+}
+.testimonials .container .testimonial-items .item blockquote {
+    line-height: 1.6;
+    font-weight: 200;
+}
+/* End Testimonials */
+
+/* Start Our Team */
+.our-team {
+    margin-bottom: 100px;
+}
+.our-team .container .team-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.our-team .container .team-items .item {
+    width: 250px;
+}
+.our-team .container .team-items .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.our-team .container .team-items .item h3 {
+    margin-bottom: 5px;
+}
+.our-team .container .team-items .item h4 {
+    margin-bottom: 15px;
+    color: #6B7280;
+    font-size: 15px;
+    font-weight: 400;
+}
+.our-team .container .team-items .item .social-icons {
+    margin-left: 10px;
+}
+.our-team .container .team-items .item .social-icons a {
+    color: #6b7280;
+    font-size: 25px;
+    margin-right: 10px;
+}
+/* End Our Team */
+
+/* Start Contact Us */
+.contact {
+    background-image: url(imgs/cta-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.contact .container .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+.contact .container .contact-content .left-contus {
+    max-width: 440px;
+    width: 100%;
+}
+.contact .container .contact-content .left-contus p {
+    line-height: 1.6;
+    font-weight: 200;
+}
+.contact .container .contact-content .right-contus  {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 24px;   
+    padding: 30px;
+    max-width: 580px;
+    width: 100%;
+}
+.contact .container .contact-content .right-contus form h1 {
+    margin-bottom: 20px;
+}
+.contact .container .contact-content .right-contus form input[type="submit"] {
+    color: #0328AA;
+    background-color: white;
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+.contact .container .contact-content .right-contus form .form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;;
+}
+
+.contact .container .contact-content .right-contus form .form-section .cont-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.contact .container .contact-content .right-contus form .form-section input,
+.contact .container .contact-content .right-contus form .form-section textarea {
+    padding: 12px 8px;
+    border-radius: 8px;
+    border: 0.4px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.contact .container .contact-content .right-contus form .form-section textarea {
+    width: 100%;
+}
+.contact .container .contact-content .right-contus form .form-section input::placeholder,
+.contact .container .contact-content .right-contus form .form-section textarea::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+.contact .container .contact-content .right-contus form .form-section input:focus::placeholder,
+.contact .container .contact-content .right-contus form .form-section textarea:focus::placeholder {
+    opacity: 1;
+}
+
+/* End Contact Us */
+
+/* Start Footer */
+footer {
+    background-color: #6b7280;
+    color: white;
+}
+footer .container .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+footer .container .footer-content .footer-left {
+    max-width: 300px;
+    width: 100%;
+}
+footer .container .footer-content .footer-right {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+footer .container .footer-content .footer-right ul li:first-of-type {
+    margin-top: 10px;
+}
+footer .container .footer-content .footer-right ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+footer .container .footer-content .footer-right ul li a {
+    color: white;
+    margin-bottom: 10px;
+}
+footer .container .footer-content .footer-right ul li i {
+    margin-right: 10px;
+}
+footer .container .footer-content .footer-left p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+footer .container .footer-content .footer-left img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+footer .container > p {
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* End Footer */
+
+/* Start Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+        max-width: 600px;
+    }
+    .heroPLUSheader .container .nav-content {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+    .heroPLUSheader .hero .container h1 {
+        font-size: 30px;
+    }
+    .heroPLUSheader .hero .container button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .heroPLUSheader .container .nav-content > a img {
+        width: 100px;
+    }
+    .heroPLUSheader .container nav ul {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .heroPLUSheader .container nav ul li a {
+        font-size: 12px;
+    }
+    .partners .container .partner-logos img {
+        width: 80px;
+        margin: auto;
+    }
+    .services .container .service-items {
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    .about-content .details-about {
+        margin: auto;
+    }
+    .about-content .img-about {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /* End about */
+
+    /* Start services */
+    .about, .services, .why, .testimonials, .our-team {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .services .container p {
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .services .container .service-items .service-item {
+        width: 300px;
+    }
+    .services .container .service-items img {
+        width: 250px;
+        height: 200px;
+    }
+    /* End services */
+
+    /* Start Why Choose Us */
+    .why .container .why-choose-us-items .item {
+        width: 300px; 
+        margin: auto; 
+    }
+    .why .container .why-choose-us-items .item img {
+        width: 40px;
+    }
+    .why .container .why-choose-us-items .item h3:last-of-type {
+        font-size: 30px;
+    }
+    /* End Why Choose Us */
+
+    /* Start Testimonials */
+    .testimonials .container p {
+        width: 300px;
+        margin: auto;
+    }
+    .testimonials .container .testimonial-items .item {
+        width: 300px;
+        margin: auto;
+    }
+    /* End Testimonials */
+
+    /* Start Our Team */
+    .our-team .container p {
+        width: 300px;
+        margin: auto;
+    }
+   .our-team .container .team-items .item {
+        width: 300px;
+        margin: auto;
+    }
+    .our-team .container .team-items .item img {
+        width: 250px;
+        height: 200px;
+    }
+    .our-team .container .team-items .item .social-icons a {
+        font-size: 20px;
+    }
+    /* End Our Team */
+
+    /* Start Contact Us */
+    .contact .container .contact-content .left-contus {
+        width: 300px;
+    }
+    .contact .container .contact-content .right-contus  {
+        width: 300px;
+    }
+    .contact .container .contact-content .right-contus form .form-section {
+        flex-direction: column;
+    }
+    .contact .container .contact-content .right-contus form h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* End Contact Us */
+
+    /* Start Footer */
+    footer .container .footer-content .footer-left {
+        margin: auto;
+        text-align: center;
+    }
+    footer .container .footer-content .footer-right {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+/* End Responsive */
