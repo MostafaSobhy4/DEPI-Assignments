@@ -11,32 +11,31 @@
     <link rel="icon" href="imgs/logo.png" type="image/png">
 </head>
 <body>
-    <div class="heroPLUSheader">
-            <div class="container">
-                <div class="nav-content">
-                    <a href="index.html"><img src="imgs/logo.png" alt="Genex Logo"></a>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#why">Why Choose Us</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
+    <header class="heroPLUSheader">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html"><figure><img src="imgs/logo.png" alt="Genex Logo"></img></figure></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
         <section class="hero" id="hero">
             <div class="container">
                 <div class="hero-content">
                     <h1>Next-Generation Digital Solutions</h1>
                     <p>At Genex, we transform ideas into innovative digital experiences. From tailored software development to creative IT solutions, we help businesses thrive in the digital age.</p>
-                    <button>Contact Us</button>
+                    <a href="#contact" class="cta-btn">Contact Us</a>
                 </div>
             </div>
         </section>
-    </div>
+    </header>
     <main>
         <section class="partners" id="partners">
             <div class="container">
@@ -201,22 +200,28 @@
         </section>
         <section class="contact" id="contact">
             <div class="container">
+                <div class="messageSent">
+                    <span class="mess">
+                        <h4>Your Message Has Sent Successfuly!</h4>
+                    </span>
+                </div>
                 <div class="contact-content">
                     <div class="left-contus">
                         <h2 class="section-title">Start your journey with us now</h2>
                         <p>Use this section to describe your company and the products you offer. You could share your company’s story and details about why you are in business. Use this section to describe your company and the products you offer. You could share your company’s story and</p>
                     </div>    
                     <div class="right-contus">
-                        <form action="#" method="post">
+                        <form class="contus-form" action="#" method="post">
                             <h1>Send us a message</h1>
                             <div class="form-section">
                                 <div class="cont-inputs">
-                                    <input type="text" id="name" name="name" placeholder="Enter Name">
-                                    <input type="email" id="email" name="email" placeholder="Enter Email">
+                                    <input type="text" class="name" name="name" placeholder="Enter Name" required>
+                                    <input type="email" class="email" name="email" placeholder="Enter Email" required>
                                 </div>
-                                <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+                                <textarea class="message" name="message" placeholder="Enter Your Message" required></textarea>
                             </div>
-                            <input type="submit" value="Submit">
+                            <p class="message_error"></p>
+                            <button class="submit" type="submit">Send Message</button>
                         </form>                    
                     </div>    
                 </div>
@@ -231,15 +236,14 @@
                     <p>We’re a full-service IT agency dedicated to helping businesses grow through innovation and technology.</p>
                 </div>
                 <div class="footer-right">
-                    <ul>
+                    <ul class="footer-links">
                         <h2>Links</h2>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
-                    <ul>
+                    <ul class="footer-socials">
                         <h2>SOCIALS</h2>
                         <li><a href="#">instagram</i></a></li>
                         <li><a href="#">facebook</i></a></li>
@@ -247,7 +251,7 @@
                         <li><a href="#">linkedin</i></a></li>
                         <li><a href="#">youTube</a></li>
                     </ul>
-                    <ul>
+                    <ul class="footer-contact">
                         <h2>Contact Us</h2>
                         <li><i class="fa-solid fa-phone"></i>+123 456 7890</li>
                         <li><i class="fa-solid fa-envelope"></i>hello@genexdigitals.com</li>
@@ -255,8 +259,9 @@
                     </ul>
                 </div>
             </div>
-            <p>&copy; 2025 Genex, Inc. - All Rights Reserved</p>
+            <p>&copy; 2026 Genex, Inc. - All Rights Reserved</p>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
