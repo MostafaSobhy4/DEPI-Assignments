@@ -56,3 +56,15 @@ button_form.addEventListener("click", (e) => {
 }
 });
 
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if (position < window.innerHeight) {
+      el.classList.add('show');
+      console.log(window.innerHeight);
+      
+    }
+  });
+});

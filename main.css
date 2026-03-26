@@ -1,10 +1,6 @@
 :root {  
     --primary-color: #0328AA;
-    --secondary-color: #6b7280;
     --accent-color: #ffa134;
-    --light-bg: #EEF5FF;
-    --dark-bg: #0328AA;
-    --text-color: #000000;
     --main-transition: 0.3s ease;
 }
 * {
@@ -28,6 +24,15 @@ li {
     max-width: 1200px;
     margin: auto;
     padding: 0 32px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Start Hero + Header */
@@ -60,7 +65,7 @@ li {
     padding: 5px;
 }
 .heroPLUSheader .container nav ul li a {
-    color: #0328aa;
+    color: var(--primary-color);
     position: relative;
     transition: color var(--main-transition);
 }
@@ -71,7 +76,7 @@ li {
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #0328aa;
+    background-color: var(--primary-color);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
@@ -93,7 +98,7 @@ li {
     display: block;
     width: 200px;
     padding: 25px 50px;
-    background-color: #0328aa;
+    background-color: var(--primary-color);
     color: white;
     margin-top: 20px;
     border-radius: 8px;
@@ -101,10 +106,13 @@ li {
     transition: 0.5s;
     border: transparent solid 1px;
 }
+button:hover, .cta-btn:hover {
+  transform: scale(1.05);
+}
 .heroPLUSheader .hero .container .cta-btn:hover {
     background-color: white;
-    color: #0328aa;
-    border: #0328AA solid 1px;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
 }
 .hero-content {
     margin-top: 150px;
@@ -182,6 +190,11 @@ li {
     background-color: #eee;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.services .container .service-items .service-item:hover {
+  transform: translateY(-10px);
 }
 .services .container .service-items h3 {
     margin-bottom: 10px;
@@ -204,7 +217,7 @@ li {
     margin-bottom: 100px;
     background-image: url(imgs/Why-choose-us-bg.png);
     background-size: cover;
-    background-color: #0328AA;
+    background-color: var(--primary-color);
     color: white;
     padding: 150px 0px;
 }
@@ -226,6 +239,11 @@ li {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.why .container .why-choose-us-items .item:hover {
+    transform: translateY(-10px);
 }
 .why .container .why-choose-us-items .item img {
     width: 60px;
@@ -262,6 +280,11 @@ li {
     background-color: #EEF5FF;
     padding: 30px;
     border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.testimonials .container .testimonial-items .item:hover {
+    transform: translateY(-10px);
 }
 .testimonials .container .testimonial-items .item img {
     width: 60px;
@@ -292,11 +315,16 @@ li {
 }
 .our-team .container .team-items .item {
     width: 260px;
-    background-color: #ffa134;
-    color: #0328AA;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.our-team .container .team-items .item:hover {
+    transform: translateY(-10px);
 }
 .our-team .container .team-items .item img {
     width: 100%;
@@ -370,7 +398,7 @@ li {
     margin-bottom: 20px;
 }
 .contact .container .contact-content .right-contus form .submit {
-    color: #0328AA;
+    color: var(--primary-color);
     background-color: white;
     padding: 15px 5px;
     text-align: center;
@@ -436,7 +464,7 @@ li {
     width: fit-content;
     height: fit-content;
     text-align: center;
-    background: linear-gradient(to right, #3b5bce, #ffa134);
+    background: linear-gradient(to right, #3b5bce, var(--accent-color));
     margin: 20px 20px 0px 0px;
     z-index: 3;
     border-radius: 5px;
@@ -504,7 +532,7 @@ footer .container .footer-content .footer-right ul li a {
     transition: var(--main-transition);
 }
 footer .container .footer-content .footer-right ul li a:hover {
-    color: #0328AA;
+    color: var(--primary-color);
 }
 footer .container .footer-content .footer-right .footer-socials li:nth-of-type(1) a:hover {
     color: #feda75;
@@ -553,10 +581,8 @@ footer .container > p {
         background-color: #e6effc;
 
     }
-    
+
 }
-
-
 
 @media (max-width: 768px) {
     .heroPLUSheader {
